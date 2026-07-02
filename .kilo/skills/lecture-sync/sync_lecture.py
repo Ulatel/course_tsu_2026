@@ -42,13 +42,12 @@ _PPTX_WRITER = os.path.normpath(os.path.join(_HERE, "..", "pptx-writer"))
 if _PPTX_WRITER not in sys.path:
     sys.path.insert(0, _PPTX_WRITER)
 
-import generate_pptx as gp  # noqa: E402
 from pptx import Presentation  # noqa: E402
 
 from generate_pptx import (  # noqa: E402
     _H1, _PART, _SUB, _MARKER,
     add_cover_slide, add_content_slide, add_section_slide,
-    bullets_from_block, find_layout, first_sentence, strip_md,
+    find_layout, first_sentence, strip_md,
 )
 
 # --- регулярки -----------------------------------------------------------------
