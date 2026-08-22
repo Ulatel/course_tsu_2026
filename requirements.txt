@@ -31,7 +31,7 @@ Pillow==12.3.0
 albumentations==2.0.8
 pycocotools==2.0.11
 
-# Fine-tuning и датасеты Hugging Face (Модули 5, 7)
+# Fine-tuning и датасеты Hugging Face (Модули 5, 8)
 datasets==5.0.1
 accelerate==1.14.0
 peft==0.20.0
