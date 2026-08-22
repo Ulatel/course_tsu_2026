@@ -1,0 +1,31 @@
+# Библиотеки для курса ML (ТСУ 2026)
+# Версии зафиксированы по проверенному окружению course_ml (Python 3.12.13, Windows)
+# Смоук-тесты всех 8 модулей: tests/smoke_test.py — 8/8 PASS
+
+# Ядро — классический ML (Модули 1-2)
+numpy==2.5.2
+pandas==3.0.5
+matplotlib==3.11.1
+seaborn==0.13.2
+scikit-learn==1.9.0
+
+# Ансамбли и несбалансированные данные (Модуль 3)
+xgboost==3.4.1
+lightgbm==4.7.0
+imbalanced-learn==0.14.2
+
+# Нейросети (Модули 4-8)
+torch==2.13.0
+torchvision==0.28.0
+transformers==5.15.0
+sentence-transformers==5.7.0
+
+# Компьютерное зрение: YOLO, аугментация (Модуль 6)
+ultralytics==8.4.121
+albumentations==2.0.8
+
+# Разметка данных (Модуль 6)
+label-studio==1.23.0
+
+# Ноутбуки
+jupyter==1.1.1
