@@ -24,19 +24,19 @@ torchvision==0.28.0
 transformers==5.15.0
 sentence-transformers==5.7.0
 
-# Компьютерное зрение: YOLO, изображения, аугментация, COCO (Модуль 6)
+# Компьютерное зрение: YOLO, изображения, аугментация, COCO (Модуль 5)
 ultralytics==8.4.121
 opencv-python==5.0.0.93
 Pillow==12.3.0
 albumentations==2.0.8
 pycocotools==2.0.11
 
-# Fine-tuning и датасеты Hugging Face (Модули 6, 8)
+# Fine-tuning и датасеты Hugging Face (Модули 5, 7)
 datasets==5.0.1
 accelerate==1.14.0
 peft==0.20.0
 
-# Разметка данных (Модуль 6)
+# Разметка данных (Модуль 5)
 label-studio==1.23.0
 
 # Прочее
