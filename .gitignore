@@ -4,3 +4,16 @@
 secrets.json
 credentials.json
 token.json
+
+# Артефакты Python
+__pycache__/
+*.pyc
+
+# Артефакты обучения (CatBoost)
+catboost_info/
+
+# Временные/блокировочные файлы Office
+~$*
+
+# Артефакты смоук-тестов
+tests/*.png
