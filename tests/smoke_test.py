@@ -142,7 +142,7 @@ def test_m4():
     assert loss.item() > 0
 
 
-def test_m5():
+def test_m4_pinn():
     import torch
     import torch.nn as nn
 
@@ -164,7 +164,7 @@ def test_m5():
     assert err < 0.1, f"max err {err}"
 
 
-def test_m6():
+def test_m5():
     import numpy as np
     import albumentations as A
     import ultralytics
@@ -257,12 +257,12 @@ def test_extra():
     acc = CatBoostClassifier(iterations=10, verbose=0).fit(Xc, yc).score(Xc, yc)
     assert acc > 0.8
 
-    # opencv + Pillow (М6)
+    # opencv + Pillow (М5)
     img = (np.random.rand(64, 64, 3) * 255).astype("uint8")
     assert cv2.cvtColor(img, cv2.COLOR_RGB2GRAY).shape == (64, 64)
     assert PIL.Image.fromarray(img).size == (64, 64)
 
-    # pycocotools: COCO-маски (М6, конвертация разметки)
+    # pycocotools: COCO-маски (М5, конвертация разметки)
     m = cocomask.encode(np.asfortranarray((np.random.rand(32, 32) > 0.5).astype("uint8")))
     assert cocomask.area(m) >= 0
 
@@ -271,8 +271,8 @@ run("М1  EDA+KNN (Titanic)", test_m1)
 run("М2  Регрессия+GD+Ridge/Lasso+GridSearch", test_m2)
 run("М3  XGBoost+LightGBM+RF+SMOTE", test_m3)
 run("М4  PyTorch MLP (MNIST-style)", test_m4)
-run("М5  PINN (физический loss)", test_m5)
-run("М6  YOLO+albumentations+UNet+label-studio", test_m6)
+run("М4  PINN (физический loss)", test_m4_pinn)
+run("М5  YOLO+albumentations+UNet+label-studio", test_m5)
 run("М7  Pipeline", test_m7)
 run("М8  sentence-transformers+KMeans", test_m8)
 run("Доп  scipy+statsmodels+catboost+opencv+coco+HF", test_extra)
